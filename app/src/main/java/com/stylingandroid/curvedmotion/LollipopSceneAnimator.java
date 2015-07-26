@@ -1,6 +1,8 @@
 package com.stylingandroid.curvedmotion;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.TransitionRes;
@@ -11,6 +13,7 @@ import android.transition.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
 
+@TargetApi(Build.VERSION_CODES.LOLLIPOP)
 final class LollipopSceneAnimator implements SceneAnimator {
     private final TransitionManager transitionManager;
     private Scene scene1;
