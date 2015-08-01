@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if (!setupModeSelection()) {
             setLegacyAnimator();
         }
-        setLollipopAnimator();
     }
 
     private void setupToolbar() {
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void setLegacyAnimator() {
         if (!(sceneAnimator instanceof LegacySceneAnimator)) {
             container.removeAllViews();

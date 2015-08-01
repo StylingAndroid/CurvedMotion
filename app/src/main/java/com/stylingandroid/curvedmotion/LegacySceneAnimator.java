@@ -19,8 +19,8 @@ import android.widget.FrameLayout;
 
 final class LegacySceneAnimator implements SceneAnimator, View.OnClickListener, ViewTreeObserver.OnPreDrawListener {
     private static final float INTERPOLATOR_FACTOR = .75f;
-    private static final String TRANSLATION_Y = "translationY";
     private static final String TRANSLATION_X = "translationX";
+    private static final String TRANSLATION_Y = "translationY";
 
     private final FrameLayout parent;
     private final View view;
@@ -96,5 +96,4 @@ final class LegacySceneAnimator implements SceneAnimator, View.OnClickListener, 
         animator.setInterpolator(interpolator);
         return animator;
     }
-
 }
